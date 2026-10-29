@@ -1,0 +1,27 @@
+body {
+    background-color: #0F0F10;
+    color: #0F0F10;
+    font-family: 'Inter', sans-serif;
+}
+.font-display {
+    font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0F0F10;
+}
+::-webkit-scrollbar-thumb {
+    background: #2B5278;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3B6E9E;
+}
+.glow-effect {
+    box-shadow: 0 0 30px rgba(43, 82, 120, 0.3);
+}
+.text-glow {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}

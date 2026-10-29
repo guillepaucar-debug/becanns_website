@@ -1,89 +1,571 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/13.1.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/13.1.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
+< lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BECANNS | Jeans para Hombres - Calidad, Estilo y Actitud</title>
+    
+    <!-- Configuración de Tailwind CSS -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        tailwind = {
+            config: {
+                theme: {
+                    extend: {
+                        colors: {
+                            'bg-dark': '#0F0F10',
+                            'bg-card': '#18181A',
+                            'bg-card-hover': '#222225',
+                            'denim-blue': '#2B5278',
+                            'denim-dark': '#1E3A5F',
+                            'accent-silver': '#E2E8F0',
+                            'accent-green': '#25D366'
+                        },
+                        fontFamily: {
+                            sans: ['Inter', 'sans-serif'],
+                            display: ['Montserrat', 'sans-serif']
+                        }
+                    }
+                }
+            }
         }
-      });
     </script>
-  </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="vista.css">
+</head>
+< class="bg-bg-dark text-gray-200 antialiased selection:bg-denim-blue selection:text-white overflow-x-hidden">
+
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-bg-dark/90 backdrop-blur-md border-b border-gray-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- LOGO BECANNS -->
+                <a href="#inicio" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="w-12 h-12 bg-black border border-gray-700 rounded-lg flex items-center justify-center p-1.5 group-hover:border-denim-blue transition-all duration-300">
+                        <svg viewBox="0 0 100 100" class="w-full h-full fill-white">
+                            <path d="M 20,10 H 60 C 75,10 85,20 85,35 C 85,45 78,52 70,55 C 80,58 88,68 88,80 C 88,95 75,100 58,100 H 20 Z M 38,28 V 44 H 55 C 60,44 64,40 64,36 C 64,32 60,28 55,28 Z M 38,60 V 82 H 58 C 64,82 68,77 68,71 C 68,65 64,60 58,60 Z" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-display font-black text-2xl tracking-wider text-white leading-none">BECANNS</span>
+                        <span class="text-[9px] font-bold tracking-[0.2em] text-blue-400 uppercase mt-1">JEANS PARA HOMBRES</span>
+                    </div>
+                </a>
+
+                <!-- NAVEGACIÓN DESKTOP -->
+                <nav class="hidden md:flex items-center space-x-7">
+                    <a href="#inicio" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Inicio</a>
+                    <a href="#catalogo" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Catálogo</a>
+                    <a href="#calidad" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Confección</a>
+                    <a href="#cobertura" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Ubicación</a>
+                    <a href="#contacto" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Contacto</a>
+                </nav>
+
+                <!-- BOTONES HEADER -->
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:flex items-center">
+                        <button onclick="openWhatsApp('¡Hola BECANNS! Quisiera consultar el catálogo actualizado con precios.')" 
+                                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-green-600 hover:bg-green-500 text-white text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-lg shadow-green-900/30 transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Pedir por WhatsApp</span>
+                        </button>
+                    </div>
+
+                    <!-- MENÚ MÓVIL TOGGLE -->
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-btn" type="button" class="p-2 rounded-lg text-gray-400 hover:text-white hover:bg-bg-card focus:outline-none">
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DROPDOWN MÓVIL -->
+        <div id="mobile-menu" class="hidden md:hidden bg-bg-card border-b border-gray-800 px-4 pt-3 pb-6 space-y-3 absolute w-full shadow-2xl">
+            <a href="#inicio" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-gray-200 hover:bg-gray-800">Inicio</a>
+            <a href="#catalogo" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-gray-200 hover:bg-gray-800">Catálogo</a>
+            <a href="#calidad" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-gray-200 hover:bg-gray-800">Confección y Calidad</a>
+            <a href="#cobertura" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-gray-200 hover:bg-gray-800">Ubicación y Envíos</a>
+            <a href="#contacto" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-gray-200 hover:bg-gray-800">Contacto</a>
+            <div class="pt-3">
+                <button onclick="openWhatsApp('¡Hola BECANNS! Me interesa hacer una consulta rápida sobre jeans.')" 
+                        class="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-green-600 text-white text-sm font-bold uppercase tracking-wider">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Pedir por WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- PORTADA PRINCIPAL / HERO -->
+    <section id="inicio" class="relative overflow-hidden bg-gradient-to-b from-black via-bg-dark to-bg-dark py-16 lg:py-24 border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left z-10">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-denim-blue/20 border border-denim-blue/40 text-blue-400 text-xs font-semibold uppercase tracking-widest">
+                        <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                        MARCA PERUANA • LIMA & PROVINCIAS
+                    </div>
+                    
+                    <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-none uppercase">
+                        TU ESTILO <br class="hidden sm:inline" />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-slate-200 to-white text-glow">HABLA POR TI</span>
+                    </h1>
+                    
+                    <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Jeans masculinos de alta calidad, corte perfecto y diseño urbano pensados para destacar. Fabricados con denims seleccionados, costuras reforzadas y ajuste ergonómico.
+                    </p>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button onclick="openWhatsApp('¡Hola BECANNS! Deseo ver la disponibilidad de modelos y consultar mi talla ideal.')" 
+                                class="w-full sm:w-auto px-8 py-4 rounded-lg bg-green-600 hover:bg-green-500 text-white font-bold text-sm uppercase tracking-wider shadow-lg shadow-green-900/40 transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Consultar Tallas</span>
+                        </button>
+                        <a href="#catalogo" class="w-full sm:w-auto px-8 py-4 rounded-lg bg-bg-card hover:bg-gray-800 text-gray-200 border border-gray-700/80 font-bold text-sm uppercase tracking-wider transition-all duration-300 text-center">
+                            Ver Catálogo
+                        </a>
+                    </div>
+
+                    <!-- BADGES DESTACADOS (Hacen ver la web muy profesional) -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-gray-800/80 text-center lg:text-left mt-8">
+                        <div>
+                            <p class="font-display font-bold text-white text-base sm:text-lg">100% Denim</p>
+                            <p class="text-xs text-gray-500">Tela premium de alto gramaje</p>
+                        </div>
+                        <div>
+                            <p class="font-display font-bold text-white text-base sm:text-lg">Horma Ideal</p>
+                            <p class="text-xs text-gray-500">Ajuste y caída perfecta</p>
+                        </div>
+                        <div>
+                            <p class="font-display font-bold text-white text-base sm:text-lg">Atención Personal</p>
+                            <p class="text-xs text-gray-500">Pedidos directos por WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute inset-0 bg-denim-blue/30 rounded-2xl filter blur-3xl"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-gray-700 bg-black shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Modelo masculino con jeans BECANNS" 
+                                 class="w-full h-[480px] sm:h-[580px] object-cover hover:scale-105 transition-transform duration-700">
+                            
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 text-center">
+                                <span class="text-xs font-bold tracking-widest text-blue-400 uppercase">BECANNS DENIM</span>
+                                <h3 class="font-display font-black text-2xl text-white uppercase mt-1">NUEVA COLECCIÓN</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA Y CATÁLOGO DE PRODUCTOS -->
+    <section id="catalogo" class="py-20 bg-bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="text-blue-400 font-bold text-xs uppercase tracking-widest">Catálogo Seleccionado</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-black text-white uppercase">NUESTROS MODELOS</h2>
+                <div class="w-20 h-1 bg-denim-blue mx-auto rounded-full"></div>
+                <p class="text-gray-400 text-sm">Selecciona una categoría o explora nuestra colección exclusiva para hombres. Consulta stock y medidas al instante vía WhatsApp.</p>
+            </div>
+
+            <!-- FILTROS INTERACTIVOS -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterCategory('all')" id="btn-cat-all" class="cat-btn active px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-denim-blue text-white border border-denim-blue transition-all">Todos</button>
+                <button onclick="filterCategory('slim')" id="btn-cat-slim" class="cat-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-bg-card text-gray-400 border border-gray-800 hover:border-gray-600 transition-all">Slim Fit</button>
+                <button onclick="filterCategory('regular')" id="btn-cat-regular" class="cat-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-bg-card text-gray-400 border border-gray-800 hover:border-gray-600 transition-all">Regular Fit</button>
+                <button onclick="filterCategory('skinny')" id="btn-cat-skinny" class="cat-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-bg-card text-gray-400 border border-gray-800 hover:border-gray-600 transition-all">Skinny Denim</button>
+                <button onclick="filterCategory('casacas')" id="btn-cat-casacas" class="cat-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-bg-card text-gray-400 border border-gray-800 hover:border-gray-600 transition-all">Casacas Jeans</button>
+            </div>
+
+            <!-- GRID DE PRODUCTOS (Completos, con descripciones) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="product-grid">
+                
+                <!-- PRODUCTO 1: SLIM FIT -->
+                <div class="product-card item-slim bg-bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-denim-blue/80 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="h-80 overflow-hidden relative bg-black">
+                            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80" alt="Jean Slim Fit Indigo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-md text-[10px] font-bold text-blue-400 uppercase tracking-widest border border-gray-700">Slim Fit</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-lg font-extrabold text-white uppercase">Jean Slim Fit Índigo</h3>
+                            <p class="text-xs text-gray-400 mt-2 line-clamp-2">Azul clásico profundo con corte entallado en muslo y pantorrilla. Ideal para un look moderno.</p>
+                            
+                            <ul class="mt-4 space-y-1.5 text-[11px] text-gray-300">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> 98% Algodón, 2% Elastano (Flex)</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Remaches de acero inoxidable</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Tallas: 28 al 36</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openWhatsApp('¡Hola BECANNS! Deseo consultar tallas y disponibilidad del Jean Slim Fit Índigo.')" 
+                                class="w-full py-3 rounded-lg bg-green-600 hover:bg-green-500 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-lg shadow-green-900/20">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Consultar Whatsapp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 2: REGULAR FIT -->
+                <div class="product-card item-regular bg-bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-denim-blue/80 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="h-80 overflow-hidden relative bg-black">
+                            <img src="https://images.unsplash.com/photo-1555689502-c4b22d76c56f?auto=format&fit=crop&w=600&q=80" alt="Jean Regular Fit Clásico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-md text-[10px] font-bold text-blue-400 uppercase tracking-widest border border-gray-700">Regular Fit</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-lg font-extrabold text-white uppercase">Jean Regular Clásico</h3>
+                            <p class="text-xs text-gray-400 mt-2 line-clamp-2">Corte recto tradicional de confort total. Diseñado para quienes prefieren movilidad y sobriedad.</p>
+                            
+                            <ul class="mt-4 space-y-1.5 text-[11px] text-gray-300">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> 100% Algodón de alto gramaje</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Costuras ultra reforzadas</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Tallas: 30 al 38</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openWhatsApp('¡Hola BECANNS! Me interesa el Jean Regular Clásico. ¿Qué tallas tienen?')" 
+                                class="w-full py-3 rounded-lg bg-green-600 hover:bg-green-500 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-lg shadow-green-900/20">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Consultar Whatsapp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 3: SKINNY DENIM -->
+                <div class="product-card item-skinny bg-bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-denim-blue/80 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="h-80 overflow-hidden relative bg-black">
+                            <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80" alt="Jean Skinny Negro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-md text-[10px] font-bold text-blue-400 uppercase tracking-widest border border-gray-700">Skinny Denim</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-lg font-extrabold text-white uppercase">Jean Skinny Black</h3>
+                            <p class="text-xs text-gray-400 mt-2 line-clamp-2">Negro mate de alta fijación con ajuste ceñido ultra cómodo gracias a su tecnología de estiramiento 360°.</p>
+                            
+                            <ul class="mt-4 space-y-1.5 text-[11px] text-gray-300">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Denim Super Stretch 360</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Lavado con protección de color</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Tallas: 28 al 34</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openWhatsApp('¡Hola BECANNS! Quiero consultar por el Jean Skinny Black.')" 
+                                class="w-full py-3 rounded-lg bg-green-600 hover:bg-green-500 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-lg shadow-green-900/20">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Consultar Whatsapp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 4: CASACAS JEANS -->
+                <div class="product-card item-casacas bg-bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-denim-blue/80 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="h-80 overflow-hidden relative bg-black">
+                            <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80" alt="Casaca Jean Urbana" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-md text-[10px] font-bold text-blue-400 uppercase tracking-widest border border-gray-700">Casacas Jeans</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-lg font-extrabold text-white uppercase">Casaca Denim Urbana</h3>
+                            <p class="text-xs text-gray-400 mt-2 line-clamp-2">Casaca de jean estructurada con bolsillos frontales funcionales y acabados desgastados nivel premium.</p>
+                            
+                            <ul class="mt-4 space-y-1.5 text-[11px] text-gray-300">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Denim rígido 100% Algodón</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Botones metálicos grabados</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Tallas: S, M, L, XL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openWhatsApp('¡Hola BECANNS! Deseo consultar las medidas de la Casaca Denim Urbana.')" 
+                                class="w-full py-3 rounded-lg bg-green-600 hover:bg-green-500 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-lg shadow-green-900/20">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Consultar Whatsapp</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CALIDAD Y CONFECCIÓN -->
+    <section id="calidad" class="py-20 bg-black border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-blue-400 font-bold text-xs uppercase tracking-widest">Detalles que marcan la diferencia</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-black text-white uppercase">CALIDAD Y CONFECCIÓN PREMIUM</h2>
+                <p class="text-gray-400 text-sm">Cada prenda BECANNS está diseñada bajo altos estándares de confección masculina.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 bg-bg-card rounded-xl border border-gray-800 text-center space-y-4 hover:border-denim-blue transition-all duration-300 shadow-xl">
+                    <div class="w-16 h-16 rounded-full bg-denim-blue/20 text-blue-400 flex items-center justify-center mx-auto text-2xl border border-denim-blue/30"><i class="fa-solid fa-scissors"></i></div>
+                    <h3 class="font-display text-base font-extrabold text-white uppercase">Corte Ergonómico</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Desarrollados específicamente para adaptarse al cuerpo masculino brindando horma anatómica.</p>
+                </div>
+
+                <div class="p-8 bg-bg-card rounded-xl border border-gray-800 text-center space-y-4 hover:border-denim-blue transition-all duration-300 shadow-xl">
+                    <div class="w-16 h-16 rounded-full bg-denim-blue/20 text-blue-400 flex items-center justify-center mx-auto text-2xl border border-denim-blue/30"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3 class="font-display text-base font-extrabold text-white uppercase">Denim Alto Gramaje</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Tejidos seleccionados que no se deforman ni pierden consistencia tras múltiples lavados.</p>
+                </div>
+
+                <div class="p-8 bg-bg-card rounded-xl border border-gray-800 text-center space-y-4 hover:border-denim-blue transition-all duration-300 shadow-xl">
+                    <div class="w-16 h-16 rounded-full bg-denim-blue/20 text-blue-400 flex items-center justify-center mx-auto text-2xl border border-denim-blue/30"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="font-display text-base font-extrabold text-white uppercase">Costuras Reforzadas</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Hilos de alta tenacidad en tiros, pretinas y bolsillos para asegurar máxima durabilidad.</p>
+                </div>
+
+                <div class="p-8 bg-bg-card rounded-xl border border-gray-800 text-center space-y-4 hover:border-denim-blue transition-all duration-300 shadow-xl">
+                    <div class="w-16 h-16 rounded-full bg-denim-blue/20 text-blue-400 flex items-center justify-center mx-auto text-2xl border border-denim-blue/30"><i class="fa-solid fa-palette"></i></div>
+                    <h3 class="font-display text-base font-extrabold text-white uppercase">Insumos Premium</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Procesos de tinturado de alta fijación y cierres de acero de calidad industrial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN Y COBERTURA -->
+    <section id="cobertura" class="py-20 bg-bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-widest">Atención y Cobertura</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-black text-white uppercase">ENVÍOS A TODO LIMA Y PROVINCIAS DEL PERÚ</h2>
+                    
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Atendemos pedidos de forma directa y personalizada. Hacemos envíos seguros a todo Lima Metropolitana y por agencias autorizadas a nivel nacional.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-lg bg-bg-card border border-gray-800">
+                            <div class="w-10 h-10 rounded-lg bg-denim-blue/20 text-blue-400 flex items-center justify-center shrink-0 text-xl border border-denim-blue/30"><i class="fa-solid fa-truck-fast"></i></div>
+                            <div>
+                                <h4 class="font-display font-bold text-white text-sm uppercase">Lima Metropolitana</h4>
+                                <p class="text-xs text-gray-400 mt-1">Entregas rápidas coordinadas por WhatsApp previa verificación de stock y talla.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-lg bg-bg-card border border-gray-800">
+                            <div class="w-10 h-10 rounded-lg bg-denim-blue/20 text-blue-400 flex items-center justify-center shrink-0 text-xl border border-denim-blue/30"><i class="fa-solid fa-boxes-packing"></i></div>
+                            <div>
+                                <h4 class="font-display font-bold text-white text-sm uppercase">Envíos a Provincias</h4>
+                                <p class="text-xs text-gray-400 mt-1">Despachos diarios por agencias de transporte confiables (Shalom, Olva Courier).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button onclick="openWhatsApp('¡Hola BECANNS! Deseo consultar las opciones y costos de envío a mi ciudad.')" 
+                                class="inline-flex items-center gap-3 px-6 py-3.5 rounded-lg bg-green-600 hover:bg-green-500 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-lg shadow-green-900/30">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Consultar Envíos por WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="bg-bg-card p-8 rounded-2xl border border-gray-800 space-y-6">
+                        <h3 class="font-display text-xl font-extrabold text-white uppercase border-b border-gray-800 pb-4">DATOS DE CONTACTO</h3>
+                        
+                        <div class="space-y-4 text-sm text-gray-300">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded bg-black flex items-center justify-center text-blue-400 border border-gray-800"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <p class="text-xs text-gray-500 uppercase font-semibold">Ubicación Base</p>
+                                    <p class="font-medium text-white">Lima, Perú (15085)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded bg-black flex items-center justify-center text-blue-400 border border-gray-800"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <p class="text-xs text-gray-500 uppercase font-semibold">Línea Directa / WhatsApp</p>
+                                    <p class="font-medium text-white">+51 954 146 357</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded bg-black flex items-center justify-center text-blue-400 border border-gray-800"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <p class="text-xs text-gray-500 uppercase font-semibold">Correos de Atención</p>
+                                    <p class="font-medium text-white">carlos055@gmail.com / contacto@becanns.pe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA COMPLETO -->
+    <footer id="contacto" class="bg-black border-t border-gray-800/80 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-gray-800/80">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-black border border-gray-700 rounded-lg flex items-center justify-center p-1">
+                            <svg viewBox="0 0 100 100" class="w-full h-full fill-white">
+                                <path d="M 20,10 H 60 C 75,10 85,20 85,35 C 85,45 78,52 70,55 C 80,58 88,68 88,80 C 88,95 75,100 58,100 H 20 Z M 38,28 V 44 H 55 C 60,44 64,40 64,36 C 64,32 60,28 55,28 Z M 38,60 V 82 H 58 C 64,82 68,77 68,71 C 68,65 64,60 58,60 Z" />
+                            </svg>
+                        </div>
+                        <span class="font-display font-black text-xl text-white">BECANNS</span>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Marca peruana dedicada a la confección y comercialización de jeans para hombres. Calidad, estilo urbano y actitud en cada prenda.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-display font-bold text-white mb-4 text-xs uppercase tracking-widest">Navegación Rápida</h4>
+                    <ul class="space-y-2.5 text-xs text-gray-400">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="#catalogo" class="hover:text-white transition-colors">Catálogo de Jeans</a></li>
+                        <li><a href="#calidad" class="hover:text-white transition-colors">Calidad & Confección</a></li>
+                        <li><a href="#cobertura" class="hover:text-white transition-colors">Envíos & Ubicación</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-display font-bold text-white mb-4 text-xs uppercase tracking-widest">Atención al Cliente</h4>
+                    <ul class="space-y-2.5 text-xs text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-gray-600"></i> Lima, Perú (15085)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-gray-600"></i> +51 954 146 357</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-gray-600"></i> carlos055@gmail.com</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-gray-600"></i> contacto@becanns.pe</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-display font-bold text-white mb-4 text-xs uppercase tracking-widest">Canales Oficiales</h4>
+                    <div class="flex items-center gap-3">
+                        <a href="https://www.facebook.com/estiloBECANNS/" target="_blank" rel="noopener noreferrer" 
+                           class="w-10 h-10 rounded-lg bg-bg-card hover:bg-denim-blue text-white flex items-center justify-center border border-gray-800 transition-colors" aria-label="Facebook Becanns">
+                            <i class="fa-brands fa-facebook-f text-lg"></i>
+                        </a>
+                        <button onclick="openWhatsApp('¡Hola BECANNS! Deseo comunicarme por WhatsApp.')" 
+                                class="w-10 h-10 rounded-lg bg-bg-card hover:bg-green-600 text-white flex items-center justify-center border border-gray-800 transition-colors" aria-label="WhatsApp Becanns">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-xs text-gray-600 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 BECANNS - Jeans para Hombres. Todos los derechos reservados.</p>
+                <p>Diseñado para destacar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="openWhatsApp('¡Hola BECANNS! Quisiera consultar la disponibilidad de un modelo de su catálogo web.')" 
+                class="w-14 h-14 rounded-full bg-green-600 hover:bg-green-500 text-white flex items-center justify-center shadow-2xl shadow-green-900/50 transition-transform hover:scale-110 focus:outline-none"
+                aria-label="Contactar por WhatsApp">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </button>
+    </div>
+
+    <!-- Script de lógica funcional -->
+    <!-- Script de lógica funcional integrado (Infalible) -->
+    <script>
+        const WHATSAPP_NUMBER = '51954146357'; 
+
+        // Función de WhatsApp
+        window.openWhatsApp = function(customText) {
+            const defaultText = "¡Hola BECANNS! Deseo consultar modelos, tallas y precios de sus jeans para hombres.";
+            const message = encodeURIComponent(customText || defaultText);
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+            
+            try {
+                const nuevaPestana = window.open(url, '_blank');
+                if (!nuevaPestana || nuevaPestana.closed || typeof nuevaPestana.closed == 'undefined') {
+                    window.location.href = url;
+                }
+            } catch(e) {
+                window.location.href = url;
+            }
+        };
+
+        // Función de Filtros
+        window.filterCategory = function(category) {
+            const cards = document.querySelectorAll('.product-card');
+            const buttons = document.querySelectorAll('.cat-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-denim-blue', 'text-white', 'border-denim-blue');
+                btn.classList.add('bg-bg-card', 'text-gray-400', 'border-gray-800');
+            });
+
+            const activeBtn = document.getElementById(`btn-cat-${category}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-bg-card', 'text-gray-400', 'border-gray-800');
+                activeBtn.classList.add('bg-denim-blue', 'text-white', 'border-denim-blue');
+            }
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'flex';
+                } else {
+                    if (card.classList.contains(`item-${category}`)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        };
+
+        // Menú móvil y Scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            const header = document.querySelector('header');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    header.classList.add('shadow-lg');
+                } else {
+                    header.classList.remove('shadow-lg');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
